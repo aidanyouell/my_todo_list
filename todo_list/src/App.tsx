@@ -3,21 +3,25 @@ import './App.css'
 import InputBox from './input';
 import HeaderBar from './header';
 import NewNote from './newNote';
+import CreatedNote from './createdNote';
 
 function App() {
-  const [name, setName] = useState('');
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value);
-  }
 
   return (
     <>
+      <div id="headerDiv">
         <HeaderBar/>
-        <h1>{name}</h1>
-        <h3>Type below:</h3>
-        <InputBox value={name} onChange={handleChange} />
+      </div>
+      <div id="newNoteDiv">
         <NewNote/>
+      </div>
+      <div id="createdNotes">
+        <CreatedNote />
+        <CreatedNote />
+        <CreatedNote />
+        <CreatedNote />
+        <CreatedNote />
+      </div>
     </>
   )
 }

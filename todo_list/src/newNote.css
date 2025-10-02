@@ -1,0 +1,31 @@
+#newNote {
+    display: flex;
+    border-radius: 1.75em;
+    background-color: white;
+    color: #2c2c2c;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 0em 1em 2em;
+    max-width: 25em;
+    margin-top: 2em;
+}
+
+#description {
+    font-size: 1.25em;
+}
+
+button {
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 1.75em;
+    border-style: none;
+    max-width: 30%;
+    box-shadow: none;
+    padding: 0.8em;
+    transition: background-color 0.1s ease;
+}
+
+button:hover {
+    background-color: #363636;
+    color: #f5f5f5;
+}
