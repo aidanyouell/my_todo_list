@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
-import InputBox from './input';
 import HeaderBar from './header';
 import NewNote from './newNote';
 import CreatedNote from './createdNote';
